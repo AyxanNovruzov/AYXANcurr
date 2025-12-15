@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@100;200;300;400;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@media screen and (min-width: 360px) and (max-width: 767.98px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+        background: #ffffff;
+        color: #000;
+    }
+
+    /* HEADER */
+    .header {
+        height: 3.360215vw;
+        min-height: 20px;
+        background-color: #F5F5F6;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.344086vw 4.032258vw;
+        border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+        margin-left: 6.72043vw;
+    }
+
+    .logo img {
+        min-height: 9.2px;
+        height: 1.545698vw;
+        width: 5.981182vw;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 1.612903vw;
+    }
+
+    .navigation a {
+        min-height: 6.4px;
+        margin-top: 0.4vw;
+        font-size: 0.87365591vw;
+        color: #999;
+        cursor: pointer;
+    }
+
+    .navigation a:first-child {
+        color: #000;
+    }
+
+    .login-btn {
+        font-weight: 500;
+        margin-right: 6.72043vw;
+        border: none;
+        background: #fff;
+        padding: 0.672043vw 1.344086vw;
+        border-radius: 0.403226vw;
+        cursor: pointer;
+        font-size: 0.896034vw;
+        min-height: 10px;
+    }
+
+    /* MAIN */
+    .main {
+        display: grid;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        padding: 4.03226vw;
+    }
+
+    h1 {
+        font-size: 3.19354vw;
+        margin-bottom: 2.688172vw;
+    }
+
+
+    /* CONVERTER */
+    .converter {
+        display: flex;
+        flex-direction: column;
+        gap: 5.7634vw;
+    }
+
+    .box {
+        width: 40.88172vw;
+    }
+
+    .info {
+        font-size: 1.64086vw;
+        color: #999;
+        margin-bottom: 1.306451vw;
+    }
+
+    /* TABS */
+    .money-type {
+        display: flex;
+        border: 1px solid #ddd;
+        border-radius: 0.403226vw;
+        overflow: hidden;
+        margin-bottom: 1.308064vw;
+    }
+
+    .money-type button {
+        flex: 1;
+        padding: 1.06451vw 0;
+        border: none;
+        background: #fff;
+        font-size: 1.34086vw;
+        cursor: pointer;
+        color: #999;
+    }
+
+    .money-type .colored {
+        background: #7a3cff;
+        color: #fff;
+    }
+
+    .money-type .colored2 {
+        background: #7a3cff;
+        color: #fff;
+    }
+
+    /* AMOUNT BOX */
+    .amount-box {
+        border: 1px solid #ddd;
+        border-radius: 0.672043vw;
+        padding: 2.8vw 3vw;
+    }
+
+
+    input {
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 3.8172vw;
+        font-weight: 700;
+        color: #000;
+        padding: 0;
+    }
+
+    .rate {
+        font-size: 1.3vw;
+        margin-top: 2.2046vw;
+        color: #aaa;
+    }
+    .internet img{
+        height: 2.850627vw;
+        width: 2.850627vw;
+    }
+    .internet{
+        justify-self: center;
+        color: #575656;
+        width: 22.805017vw;
+        border: 1px solid rgb(40, 39, 39);
+        border-radius: 2.2805017vw;
+        gap: 0.9122006vw;
+        margin-top: 5.701254vw;
+        height: 4.561003vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .internet-error{
+        font-size: 1.824401vw;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023.98px) {
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+        background: #ffffff;
+        color: #000;
+    }
+
+    /* HEADER */
+    .header {
+        height: 3.360215vw;
+        min-height: 20px;
+        background-color: #F5F5F6;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.344086vw 4.032258vw;
+        border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+        margin-left: 6.72043vw;
+    }
+
+    .logo img {
+        height: 1.545698vw;
+        width: 5.981182vw;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 1.612903vw;
+    }
+
+    .navigation a {
+        font-size: 0.87365591vw;
+        color: #999;
+        cursor: pointer;
+    }
+
+    .navigation a:first-child {
+        color: #000;
+    }
+
+    .login-btn {
+        font-weight: 500;
+        margin-right: 6.72043vw;
+        border: none;
+        background: #fff;
+        padding: 0.672043vw 1.344086vw;
+        border-radius: 0.403226vw;
+        cursor: pointer;
+        font-size: 0.896034vw;
+    }
+
+    /* MAIN */
+    .main {
+        display: grid;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        padding: 4.03226vw;
+    }
+
+    h1 {
+        font-size: 2.419354vw;
+        margin-bottom: 2.688172vw;
+    }
+
+    /* CONVERTER */
+    .converter {
+        display: flex;
+        gap: 5.37634vw;
+    }
+
+    .box {
+        width: 26.88172vw;
+    }
+
+    .info {
+        font-size: 0.94086vw;
+        color: #999;
+        margin-bottom: 0.806451vw;
+    }
+
+    /* TABS */
+    .money-type {
+        display: flex;
+        border: 1px solid #ddd;
+        border-radius: 0.403226vw;
+        overflow: hidden;
+        margin-bottom: 1.008064vw;
+    }
+
+    .money-type button {
+        flex: 1;
+        padding: 0.806451vw 0;
+        border: none;
+        background: #fff;
+        font-size: 0.94086vw;
+        cursor: pointer;
+        color: #999;
+    }
+
+    .money-type .colored {
+        background: #7a3cff;
+        color: #fff;
+    }
+
+    .money-type .colored2 {
+        background: #7a3cff;
+        color: #fff;
+    }
+
+    /* AMOUNT BOX */
+    .amount-box {
+        border: 1px solid #ddd;
+        border-radius: 0.672043vw;
+        padding: 2.5vw;
+    }
+
+
+    input {
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 2.688172vw;
+        font-weight: 700;
+        color: #000;
+        padding: 0;
+    }
+
+    .rate {
+        font-size: 0.94086vw;
+        color: #aaa;
+        margin-top: 0.672046vw;
+    }
+    .internet img{
+        height: 2.850627vw;
+        width: 2.850627vw;
+    }
+    .internet{
+        justify-self: center;
+        color: #575656;
+        width: 22.805017vw;
+        border: 1px solid rgb(40, 39, 39);
+        border-radius: 2.2805017vw;
+        gap: 0.9122006vw;
+        margin-top: 5.701254vw;
+        height: 4.561003vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .internet-error{
+        font-size: 1.824401vw;
+    }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1439.98px) {
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+        background: #ffffff;
+        color: #000;
+    }
+
+    /* HEADER */
+    .header {
+        height: 3.360215vw;
+        min-height: 20px;
+        background-color: #F5F5F6;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.344086vw 4.032258vw;
+        border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+        margin-left: 6.72043vw;
+    }
+
+    .logo img {
+        height: 1.545698vw;
+        width: 5.981182vw;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 1.612903vw;
+    }
+
+    .navigation a {
+        font-size: 0.87365591vw;
+        color: #999;
+        cursor: pointer;
+    }
+
+    .navigation a:first-child {
+        color: #000;
+    }
+
+    .login-btn {
+        font-weight: 500;
+        margin-right: 6.72043vw;
+        border: none;
+        background: #fff;
+        padding: 0.672043vw 1.344086vw;
+        border-radius: 0.403226vw;
+        cursor: pointer;
+        font-size: 0.896034vw;
+    }
+
+    /* MAIN */
+    .main {
+        display: grid;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        padding: 4.03226vw;
+    }
+
+    h1 {
+        font-size: 2.419354vw;
+        margin-bottom: 2.688172vw;
+    }
+
+    /* CONVERTER */
+    .converter {
+        display: flex;
+        gap: 5.37634vw;
+    }
+
+    .box {
+        width: 26.88172vw;
+    }
+
+    .info {
+        font-size: 0.94086vw;
+        color: #999;
+        margin-bottom: 0.806451vw;
+    }
+
+    /* TABS */
+    .money-type {
+        display: flex;
+        border: 1px solid #ddd;
+        border-radius: 0.403226vw;
+        overflow: hidden;
+        margin-bottom: 1.008064vw;
+    }
+
+    .money-type button {
+        flex: 1;
+        padding: 0.806451vw 0;
+        border: none;
+        background: #fff;
+        font-size: 0.94086vw;
+        cursor: pointer;
+        color: #999;
+    }
+
+    .money-type .colored {
+        background: #7a3cff;
+        color: #fff;
+    }
+
+    .money-type .colored2 {
+        background: #7a3cff;
+        color: #fff;
+    }
+
+    /* AMOUNT BOX */
+    .amount-box {
+        border: 1px solid #ddd;
+        border-radius: 0.672043vw;
+        padding: 2.5vw;
+    }
+
+
+    input {
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 2.688172vw;
+        font-weight: 700;
+        color: #000;
+        padding: 0;
+    }
+
+    .rate {
+        font-size: 0.94086vw;
+        color: #aaa;
+        margin-top: 0.672046vw;
+    }
+    .internet img{
+        height: 2.850627vw;
+        width: 2.850627vw;
+    }
+    .internet{
+        justify-self: center;
+        color: #575656;
+        width: 22.805017vw;
+        border: 1px solid rgb(40, 39, 39);
+        border-radius: 2.2805017vw;
+        gap: 0.9122006vw;
+        margin-top: 5.701254vw;
+        height: 4.561003vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .internet-error{
+        font-size: 1.824401vw;
+    }
+}
