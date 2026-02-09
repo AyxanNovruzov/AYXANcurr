@@ -38,8 +38,6 @@ input1.addEventListener("input", () => {
         convert(input1, input2)
     }
 
-
-    convert(input1, input2)
 })
 
 input2.addEventListener("input", () => {
@@ -62,44 +60,54 @@ input2.addEventListener("input", () => {
     if (deyer2 == "") {
         input1.value = ""
     } else {
-        convert(input1, input2)
+        convert(input2, input1)
     }
 
-    convert(input2, input1)
 })
 
 function convert(fromInput, toInput) {
-    let from = document.querySelector(".colored").textContent
-    let to = document.querySelector(".colored2").textContent
     let amount = fromInput.value
-
-    if (amount != amount) {
+    if (amount === "" || isNaN(amount)) {
+        toInput.value = ""
         return
     }
 
-    if (from == to) {
-        toInput.value = Number(amount).toString()
+    let from = document.querySelector(".colored").textContent
+    let to = document.querySelector(".colored2").textContent
 
+    if (from === to) {
+        toInput.value = amount
         fromRate.textContent = `1 ${from} = 1 ${to}`
         toRate.textContent = `1 ${to} = 1 ${from}`
-    
-    } 
-    else if (network == false) {
-        internetError.style.display = "flex"
-        
-    } else {
-        fetch(`https://hexarate.paikama.co/api/rates/${from}/${to}/latest`)
-            .then(resp => resp.json())
-            .then(d => {
-                let res = Number((d.data.mid * amount).toFixed(5)).toString()
-                toInput.value = res
-                fromRate.textContent = `1 ${from} = ${d.data.mid.toFixed(5)} ${to}`
-                toRate.textContent = `1 ${to} = ${(1 / d.data.mid).toFixed(5)} ${from}`
-            })
-
+        return
     }
 
+    if (!network) {
+        internetError.style.display = "flex"
+        return
+    }
+
+    fetch(`https://hexarate.paikama.co/api/rates/${from}/${to}/latest`)
+        .then(resp => resp.json())
+        .then(d => {
+            let rate = d.data.mid
+            let result
+
+            if (sonInput === "input1") {
+                // soldan → sağa
+                result = amount * rate
+            } else {
+                // sağdan → sola (TƏRS MƏZƏNNƏ)
+                result = amount / rate
+            }
+
+            toInput.value = Number(result.toFixed(5)).toString()
+
+            fromRate.textContent = `1 ${from} = ${rate.toFixed(5)} ${to}`
+            toRate.textContent = `1 ${to} = ${(1 / rate).toFixed(5)} ${from}`
+        })
 }
+
 
 buttons1.forEach(b => {
     b.addEventListener("click", () => {
